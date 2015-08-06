@@ -1,0 +1,6 @@
+C:\Users\John\workspace\compression\bin\Debug\CompressionApplication.exe.config
+C:\Users\John\workspace\compression\bin\Debug\CompressionApplication.exe
+C:\Users\John\workspace\compression\bin\Debug\CompressionApplication.pdb
+C:\Users\John\workspace\compression\obj\Debug\CompressionApplication.exe
+C:\Users\John\workspace\compression\obj\Debug\CompressionApplication.pdb
+C:\Users\John\workspace\compression\obj\Debug\CompressionApplication.csprojResolveAssemblyReference.cache

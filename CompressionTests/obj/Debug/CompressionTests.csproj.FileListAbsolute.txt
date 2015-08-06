@@ -1,0 +1,21 @@
+c:\users\jcarpenter\documents\visual studio 2013\Projects\CompressionTests\obj\Debug\CompressionTests.csprojResolveAssemblyReference.cache
+c:\users\jcarpenter\documents\visual studio 2013\Projects\CompressionTests\bin\Debug\CompressionTests.dll
+c:\users\jcarpenter\documents\visual studio 2013\Projects\CompressionTests\bin\Debug\CompressionTests.pdb
+c:\users\jcarpenter\documents\visual studio 2013\Projects\CompressionTests\bin\Debug\ConsoleApplication7.exe
+c:\users\jcarpenter\documents\visual studio 2013\Projects\CompressionTests\bin\Debug\ConsoleApplication7.pdb
+c:\users\jcarpenter\documents\visual studio 2013\Projects\CompressionTests\obj\Debug\CompressionTests.dll
+c:\users\jcarpenter\documents\visual studio 2013\Projects\CompressionTests\obj\Debug\CompressionTests.pdb
+C:\Users\jcarpenter\Documents\Visual Studio 2013\Projects\ConsoleApplication7\CompressionTests\bin\Debug\CompressionTests.dll
+C:\Users\jcarpenter\Documents\Visual Studio 2013\Projects\ConsoleApplication7\CompressionTests\bin\Debug\CompressionTests.pdb
+C:\Users\jcarpenter\Documents\Visual Studio 2013\Projects\ConsoleApplication7\CompressionTests\bin\Debug\ConsoleApplication7.exe
+C:\Users\jcarpenter\Documents\Visual Studio 2013\Projects\ConsoleApplication7\CompressionTests\bin\Debug\ConsoleApplication7.pdb
+C:\Users\jcarpenter\Documents\Visual Studio 2013\Projects\ConsoleApplication7\CompressionTests\obj\Debug\CompressionTests.csprojResolveAssemblyReference.cache
+C:\Users\jcarpenter\Documents\Visual Studio 2013\Projects\ConsoleApplication7\CompressionTests\obj\Debug\CompressionTests.dll
+C:\Users\jcarpenter\Documents\Visual Studio 2013\Projects\ConsoleApplication7\CompressionTests\obj\Debug\CompressionTests.pdb
+C:\Users\John\workspace\compression\CompressionTests\obj\Debug\CompressionTests.csprojResolveAssemblyReference.cache
+C:\Users\John\workspace\compression\CompressionTests\obj\Debug\CompressionTests.dll
+C:\Users\John\workspace\compression\CompressionTests\obj\Debug\CompressionTests.pdb
+C:\Users\John\workspace\compression\CompressionTests\bin\Debug\CompressionTests.dll
+C:\Users\John\workspace\compression\CompressionTests\bin\Debug\CompressionTests.pdb
+C:\Users\John\workspace\compression\CompressionTests\bin\Debug\CompressionApplication.exe
+C:\Users\John\workspace\compression\CompressionTests\bin\Debug\CompressionApplication.pdb

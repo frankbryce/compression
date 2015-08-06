@@ -1,0 +1,9 @@
+c:\users\jcarpenter\documents\visual studio 2013\Projects\ConsoleApplication7\bin\Debug\ConsoleApplication7.exe.config
+c:\users\jcarpenter\documents\visual studio 2013\Projects\ConsoleApplication7\bin\Debug\ConsoleApplication7.exe
+c:\users\jcarpenter\documents\visual studio 2013\Projects\ConsoleApplication7\bin\Debug\ConsoleApplication7.pdb
+c:\users\jcarpenter\documents\visual studio 2013\Projects\ConsoleApplication7\obj\Debug\ConsoleApplication7.exe
+c:\users\jcarpenter\documents\visual studio 2013\Projects\ConsoleApplication7\obj\Debug\ConsoleApplication7.pdb
+C:\Users\John\workspace\compression\bin\Debug\ConsoleApplication7.exe.config
+C:\Users\John\workspace\compression\obj\Debug\ConsoleApplication7.exe
+C:\Users\John\workspace\compression\obj\Debug\ConsoleApplication7.pdb
+C:\Users\John\workspace\compression\bin\Debug\CompressionApplication.exe.config
