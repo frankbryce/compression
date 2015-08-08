@@ -9,89 +9,45 @@ namespace CompressionApplication
         static void Main()
         {
             var randomGenerator = new RandomDataGenerator();
-            var randomRunner = new CompressionRunner(randomGenerator, new CopyDataCompressor());
 
-            Console.WriteLine("Copying Compressor:");
-            var compressionRatio = randomRunner.Run(1);
-            PrintResult(compressionRatio);
-            compressionRatio = randomRunner.Run(100);
-            PrintResult(compressionRatio);
-            compressionRatio = randomRunner.Run(10000);
-            PrintResult(compressionRatio);
-            compressionRatio = randomRunner.Run(1000000);
-            PrintResult(compressionRatio);
-            Console.WriteLine();
+            var randomRunner = new CompressionRunner(randomGenerator, new CopyDataCompressor());
+            Console.WriteLine("Copying \"Compressor\":");
+            RunWithRunner(randomRunner);
 
             var simpleRunner = new CompressionRunner(randomGenerator, new SimpleDataCompressor());
-
             Console.WriteLine("Simple (non)Compressor:");
-            compressionRatio = simpleRunner.Run(1);
-            PrintResult(compressionRatio);
-            compressionRatio = simpleRunner.Run(10);
-            PrintResult(compressionRatio);
-            compressionRatio = simpleRunner.Run(100);
-            PrintResult(compressionRatio);
-            compressionRatio = simpleRunner.Run(1000);
-            PrintResult(compressionRatio);
-            Console.WriteLine();
+            RunWithRunner(simpleRunner);
 
             var lessSimpleRunner = new CompressionRunner(randomGenerator, new LessSimpleDataCompressor());
-
-            Console.WriteLine("LessSimple (non)Compressor:");
-            compressionRatio = lessSimpleRunner.Run(1);
-            PrintResult(compressionRatio);
-            compressionRatio = lessSimpleRunner.Run(10);
-            PrintResult(compressionRatio);
-            compressionRatio = lessSimpleRunner.Run(100);
-            PrintResult(compressionRatio);
-            compressionRatio = lessSimpleRunner.Run(1000);
-            PrintResult(compressionRatio);
-            compressionRatio = lessSimpleRunner.Run(10000);
-            PrintResult(compressionRatio);
-            compressionRatio = lessSimpleRunner.Run(100000);
-            PrintResult(compressionRatio);
-            Console.WriteLine();
+            Console.WriteLine("LessSimple Compressor with randomness:");
+            RunWithRunner(lessSimpleRunner);
 
             var lessSimpleRunnerWithMaxDuplication = new CompressionRunner(new AllOnesGenerator(), new LessSimpleDataCompressor());
-
-            Console.WriteLine("LessSimple (non)Compressor:");
-            compressionRatio = lessSimpleRunnerWithMaxDuplication.Run(1);
-            PrintResult(compressionRatio);
-            compressionRatio = lessSimpleRunnerWithMaxDuplication.Run(10);
-            PrintResult(compressionRatio);
-            compressionRatio = lessSimpleRunnerWithMaxDuplication.Run(100);
-            PrintResult(compressionRatio);
-            compressionRatio = lessSimpleRunnerWithMaxDuplication.Run(1000);
-            PrintResult(compressionRatio);
-            compressionRatio = lessSimpleRunnerWithMaxDuplication.Run(10000);
-            PrintResult(compressionRatio);
-            compressionRatio = lessSimpleRunnerWithMaxDuplication.Run(100000);
-            PrintResult(compressionRatio);
-            Console.WriteLine();
+            Console.WriteLine("LessSimple Compressor maximum duplication:");
+            RunWithRunner(lessSimpleRunnerWithMaxDuplication);
 
             var lessSimpleRunnerWithDuplication = new CompressionRunner(new SixteenDataGenerator(), new LessSimpleDataCompressor());
-
-            Console.WriteLine("LessSimple (non)Compressor:");
-            compressionRatio = lessSimpleRunnerWithDuplication.Run(1);
-            PrintResult(compressionRatio);
-            compressionRatio = lessSimpleRunnerWithDuplication.Run(10);
-            PrintResult(compressionRatio);
-            compressionRatio = lessSimpleRunnerWithDuplication.Run(100);
-            PrintResult(compressionRatio);
-            compressionRatio = lessSimpleRunnerWithDuplication.Run(1000);
-            PrintResult(compressionRatio);
-            compressionRatio = lessSimpleRunnerWithDuplication.Run(10000);
-            PrintResult(compressionRatio);
-            compressionRatio = lessSimpleRunnerWithDuplication.Run(100000);
-            PrintResult(compressionRatio);
-            Console.WriteLine();
+            Console.WriteLine("LessSimple Compressor some duplication:");
+            RunWithRunner(lessSimpleRunnerWithDuplication);
 
             Console.ReadLine();
         }
 
-        static void PrintResult(double compressionRatio)
+        static void RunWithRunner(CompressionRunner runner)
         {
-            Console.WriteLine("Compression Ratio: " + (compressionRatio * 100) + "%");
+            var sizes = new uint[] {1, 10, 100, 1000, 10000, 100000, 1000000};
+            foreach (var size in sizes)
+            {
+                var compressionRatio = runner.Run(size);
+                PrintResult(compressionRatio, size);
+            }
+
+            Console.WriteLine();
+        }
+
+        static void PrintResult(double compressionRatio, uint size)
+        {
+            Console.WriteLine("Compression Ratio (" + size + " uncompressed bytes): {0:0.00}%", (compressionRatio * 100));
         }
     }
 }
